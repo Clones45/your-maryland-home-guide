@@ -28,7 +28,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/your-maryland-home-guide">
         <AnimatedRoutes />
         <BackToTop />
       </BrowserRouter>
