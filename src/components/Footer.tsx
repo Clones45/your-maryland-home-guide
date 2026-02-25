@@ -1,29 +1,178 @@
+import { Instagram, Linkedin, Facebook, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Reveal } from "./Reveal";
+
+const socialLinks = [
+  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Facebook, href: "#", label: "Facebook" },
+];
+
+const navLinks = [
+  { label: "Home", to: "/" },
+  { label: "About", to: "/about" },
+  { label: "Services", to: "/services" },
+  { label: "Communities", to: "/communities" },
+  { label: "Contact", to: "/contact" },
+];
+
+const resourceLinks = [
+  { label: "Buyer's Guide", to: "/buyers" },
+  { label: "Seller's Guide", to: "/sellers" },
+  { label: "Market Reports", to: "/market-reports" },
+];
 
 const Footer = () => {
   return (
-    <footer className="py-12 bg-charcoal text-center">
+    <footer className="py-16 bg-charcoal">
       <div className="container mx-auto px-6">
         <Reveal width="100%">
-          <p className="font-heading text-2xl text-warm-white mb-2">
-            <span className="italic font-medium">Gayane</span>{" "}
-            <span className="font-semibold">Gevorgyan</span>
-          </p>
-          <p className="text-[10px] tracking-[0.35em] uppercase font-body text-gold mb-6">
-            Realtor · Bob Lucido Team · Keller Williams Lucido Agency
-          </p>
+          <div className="grid md:grid-cols-4 gap-10 mb-12 border-b border-warm-white/10 pb-12">
+            {/* Brand column */}
+            <div className="md:col-span-1">
+              <p className="font-heading text-2xl text-warm-white mb-1">
+                <span className="italic font-medium">Gayane</span>{" "}
+                <span className="font-semibold">Gevorgyan</span>
+              </p>
+              <p className="text-[10px] tracking-[0.35em] uppercase font-body text-gold mb-4">
+                Realtor · Keller Williams Lucido Agency
+              </p>
+              <p className="text-xs font-body text-warm-white/40 leading-relaxed mb-6">
+                Licensed Maryland REALTOR® with Keller Williams Lucido Agency (Bob Lucido Team), serving Central Maryland — Ellicott City, Columbia, Laurel, Severn, and beyond — with heart-led, results-driven service.
+              </p>
+              {/* Social icons */}
+              <div className="flex items-center gap-3">
+                {socialLinks.map(({ icon: Icon, href, label }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    aria-label={label}
+                    className="w-9 h-9 border border-warm-white/20 flex items-center justify-center text-warm-white/50 hover:border-gold hover:text-gold transition-all duration-300 hover:scale-110"
+                  >
+                    <Icon size={14} />
+                  </a>
+                ))}
+              </div>
+            </div>
 
-          <div className="flex items-center justify-center gap-6 text-xs font-body text-warm-white/50 mb-6">
-            <a href="tel:+14439228458" className="hover:text-gold transition-colors">(443) 922-8458</a>
-            <span className="text-gold/30">|</span>
-            <a href="mailto:gayanegevorgyan@boblucidoteam.com" className="hover:text-gold transition-colors">
-              Email
-            </a>
+            {/* Navigate column */}
+            <div>
+              <p className="text-[10px] tracking-[0.3em] uppercase font-body font-semibold text-gold mb-5">
+                Navigate
+              </p>
+              <ul className="space-y-3">
+                {navLinks.map(({ label, to }) => (
+                  <li key={label}>
+                    <Link
+                      to={to}
+                      className="text-sm font-body text-warm-white/50 hover:text-gold transition-colors duration-300"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Resources column */}
+            <div>
+              <p className="text-[10px] tracking-[0.3em] uppercase font-body font-semibold text-gold mb-5">
+                Free Guides
+              </p>
+              <ul className="space-y-3">
+                {resourceLinks.map(({ label, to }) => (
+                  <li key={label}>
+                    <Link
+                      to={to}
+                      className="text-sm font-body text-warm-white/50 hover:text-gold transition-colors duration-300"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6">
+                <p className="text-[10px] tracking-[0.3em] uppercase font-body font-semibold text-gold mb-3">
+                  Areas Served
+                </p>
+                <p className="text-xs font-body text-warm-white/30 leading-relaxed">
+                  Bowie · Laurel · Towson · Potomac · Bethesda · Columbia · Rockville · Nottingham · Catonsville · Hyattsville · College Park · Gaithersburg · Ellicott City · Silver Spring · Westlake · Baltimore · Clarksville
+                </p>
+              </div>
+            </div>
+
+            {/* Contact column */}
+            <div>
+              <p className="text-[10px] tracking-[0.3em] uppercase font-body font-semibold text-gold mb-5">
+                Get In Touch
+              </p>
+              <div className="space-y-4">
+                <a
+                  href="tel:+14439228458"
+                  className="flex items-center gap-3 text-sm font-body text-warm-white/50 hover:text-gold transition-colors group"
+                >
+                  <Phone size={14} className="text-gold shrink-0" />
+                  Direct: (443) 922-8458
+                </a>
+                <a
+                  href="tel:+14104656900"
+                  className="flex items-center gap-3 text-sm font-body text-warm-white/50 hover:text-gold transition-colors group"
+                >
+                  <Phone size={14} className="text-gold shrink-0" />
+                  Office: (410) 465-6900
+                </a>
+                <a
+                  href="mailto:gayanegevorgyan@boblucidoteam.com"
+                  className="flex items-center gap-3 text-sm font-body text-warm-white/50 hover:text-gold transition-colors break-all"
+                >
+                  <Mail size={14} className="text-gold shrink-0" />
+                  Gayanegevorgyanrealtor@gmail.com
+                </a>
+                <Link
+                  to="/contact"
+                  className="inline-block mt-2 px-6 py-2.5 border border-gold/50 text-gold text-[10px] tracking-[0.25em] uppercase font-body font-semibold hover:bg-gold hover:text-charcoal transition-all duration-500"
+                >
+                  Book Free Consultation
+                </Link>
+              </div>
+            </div>
           </div>
 
-          <p className="text-[11px] font-body text-warm-white/30">
-            © {new Date().getFullYear()} Gayane Gevorgyan. All rights reserved.
-          </p>
+          {/* Bottom bar */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] font-body text-white">
+            <p>© {new Date().getFullYear()} Gayane Gevorgyan. All rights reserved.</p>
+
+            {/* Compliance & Team Logos */}
+            <div className="flex items-center gap-5">
+              {/* EHO + REALTOR badge */}
+              <img
+                src={`${import.meta.env.BASE_URL}eho-realtor.png`}
+                alt="Equal Housing Opportunity · REALTOR®"
+                className="h-28 w-auto object-contain"
+              />
+              {/* Bob Lucido Team logo — links to lucidoglobal.com */}
+              <a
+                href="https://lucidoglobal.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Bob Lucido Team – Keller Williams Lucido Agency"
+                className="hover:opacity-80 transition-opacity duration-300"
+              >
+                <img
+                  src={`${import.meta.env.BASE_URL}team-logo.webp`}
+                  alt="Bob Lucido Team · Keller Williams Lucido Agency"
+                  style={{ filter: "invert(1)" }}
+                  className="h-16 w-auto object-contain"
+                />
+              </a>
+            </div>
+
+            <div className="flex items-center gap-4 text-white">
+              <Link to="/buyers" className="hover:text-gold transition-colors">Buyer's Guide</Link>
+              <Link to="/sellers" className="hover:text-gold transition-colors">Seller's Guide</Link>
+              <Link to="/market-reports" className="hover:text-gold transition-colors">Market Reports</Link>
+            </div>
+          </div>
         </Reveal>
       </div>
     </footer>

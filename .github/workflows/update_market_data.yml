@@ -1,0 +1,57 @@
+name: Update Maryland Market Data
+
+on:
+  # Run every Sunday at 8:00 AM UTC (Monday 4:00 AM Eastern — before the work week)
+  schedule:
+    - cron: "0 8 * * 0"
+
+  # Also run daily at 6:00 AM UTC to catch weekly Zillow data refreshes
+  # Remove this cron if you only want weekly updates:
+  # - cron: "0 6 * * *"
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-market-data:
+    name: Fetch & Commit Market Data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run market data fetcher
+        run: python scripts/fetch_market_data.py
+
+      - name: Check if data file changed
+        id: check_changes
+        run: |
+          if git diff --quiet public/data/market_data.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push updated market data
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.name "Market Data Bot"
+          git config --local user.email "bot@gayanesellsmaryland.com"
+          git add public/data/market_data.json
+          git commit -m "chore: update Maryland market data $(date -u '+%Y-%m-%d') [skip ci]"
+          git push
+
+      - name: No changes detected
+        if: steps.check_changes.outputs.changed == 'false'
+        run: echo "✅ Market data is already up to date. No commit needed."

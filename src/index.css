@@ -133,4 +133,14 @@
   .text-warm-white {
     color: hsl(var(--warm-white));
   }
+
+  @keyframes shimmer {
+    0% { opacity: 0.3; transform: scaleX(0.4); }
+    50% { opacity: 1; transform: scaleX(1); }
+    100% { opacity: 0.3; transform: scaleX(0.4); }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2.5s ease-in-out infinite;
+  }
 }
