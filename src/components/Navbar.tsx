@@ -5,16 +5,16 @@ import bkgImage from "@/assets/Bkg.png";
 
 const primaryLinks = [
   { label: "Home", to: "/" },
-  { label: "About", to: "/about" },
-  { label: "Services", to: "/services" },
-  { label: "Communities", to: "/communities" },
-  { label: "Contact", to: "/contact" },
+  { label: "About", to: "/About" },
+  { label: "Services", to: "/Services" },
+  { label: "Communities", to: "/Communities" },
+  { label: "Contact", to: "/Contact" },
 ];
 
 const resourceLinks = [
-  { label: "Buyer's Guide", to: "/buyers" },
-  { label: "Seller's Guide", to: "/sellers" },
-  { label: "Market Reports", to: "/market-reports" },
+  { label: "Buyer's Guide", to: "/Buyers" },
+  { label: "Seller's Guide", to: "/Sellers" },
+  { label: "Market Reports", to: "/Market-Reports" },
 ];
 
 const Navbar = () => {
