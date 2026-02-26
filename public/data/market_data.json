@@ -1,7 +1,7 @@
 {
     "lastUpdated": "2026-02-25",
     "dataSource": "Zillow Research / Maryland REALTORS® / MRIS MLS",
-    "note": "Data auto-updated weekly via GitHub Actions",
+    "note": "Data auto-updated weekly",
     "counties": {
         "howardCounty": {
             "name": "Howard County",

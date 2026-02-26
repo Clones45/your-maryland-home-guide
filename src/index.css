@@ -135,12 +135,106 @@
   }
 
   @keyframes shimmer {
-    0% { opacity: 0.3; transform: scaleX(0.4); }
-    50% { opacity: 1; transform: scaleX(1); }
-    100% { opacity: 0.3; transform: scaleX(0.4); }
+    0% {
+      opacity: 0.3;
+      transform: scaleX(0.4);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+
+    100% {
+      opacity: 0.3;
+      transform: scaleX(0.4);
+    }
   }
 
   .animate-shimmer {
     animation: shimmer 2.5s ease-in-out infinite;
+  }
+
+  /* ── About photo carousel ──────────────────────────────── */
+  @keyframes spin-ring {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin-ring-reverse {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  /* Photo A: visible 0–40%, fades out 40–50%, hidden 50–90%, fades in 90–100% */
+  @keyframes photo-a {
+    0% {
+      opacity: 1;
+    }
+
+    40% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    90% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Photo B: hidden 0–40%, fades in 40–50%, visible 50–90%, fades out 90–100% */
+  @keyframes photo-b {
+    0% {
+      opacity: 0;
+    }
+
+    40% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    90% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .animate-spin-ring {
+    animation: spin-ring 10s linear infinite;
+  }
+
+  .animate-spin-ring-reverse {
+    animation: spin-ring-reverse 14s linear infinite;
+  }
+
+  .animate-photo-a {
+    animation: photo-a 8s ease-in-out infinite;
+  }
+
+  .animate-photo-b {
+    animation: photo-b 8s ease-in-out infinite;
   }
 }

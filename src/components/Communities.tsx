@@ -2,8 +2,8 @@ import communityEllicott from "@/assets/community-ellicott.jpg";
 import communityColumbia from "@/assets/community-columbia.webp";
 import communityBowie from "@/assets/community-bowie.webp";
 import communityTowson from "@/assets/community-towson.webp";
-import communityNottingham from "@/assets/community-nottingham.jpg";
-import communityClarksville from "@/assets/community-clarksville.jpg";
+import communityNottingham from "@/assets/community-nottingham.webp";
+import communityClarksville from "@/assets/community-clarksville.webp";
 import { Reveal } from "./Reveal";
 import { Search } from "lucide-react";
 

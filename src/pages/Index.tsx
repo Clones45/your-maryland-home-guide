@@ -12,11 +12,11 @@ const schemaJson = JSON.stringify({
   "@type": "RealEstateAgent",
   name: "Gayane Gevorgyan",
   description:
-    "Licensed Maryland REALTOR® with Lucido Global. Expert in residential real estate across Central Maryland — Ellicott City, Columbia, Laurel, Severn, and Hanover. Fluent in English, Armenian, and Russian.",
-  url: "https://gayanesellsmaryland.com",
+    "Licensed Maryland REALTOR® with Lucido Global. Serving Howard County and the surrounding Central Maryland region — Columbia, Ellicott City, Laurel, Bowie, Catonsville, Severn, Hanover, Clarksville, Towson, and beyond. Fluent in English, Armenian, and Russian.",
+  url: "https://gayanegevorgyanrealtor.com",
   telephone: "(443) 922-8458",
   email: "gayanegevorgyan@boblucidoteam.com",
-  image: "https://gayanesellsmaryland.com/og-image.jpg",
+  image: "https://gayanegevorgyanrealtor.com/og-image.jpg",
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",
@@ -31,15 +31,24 @@ const schemaJson = JSON.stringify({
     longitude: "-76.7981",
   },
   areaServed: [
-    "Ellicott City, MD",
+    "Howard County, MD",
     "Columbia, MD",
+    "Ellicott City, MD",
     "Laurel, MD",
+    "Bowie, MD",
+    "Catonsville, MD",
     "Severn, MD",
     "Hanover, MD",
-    "Linthicum Heights, MD",
-    "Howard County, MD",
-    "Anne Arundel County, MD",
-    "Central Maryland",
+    "Clarksville, MD",
+    "Gaithersburg, MD",
+    "Rockville, MD",
+    "Silver Spring, MD",
+    "Bethesda, MD",
+    "Towson, MD",
+    "College Park, MD",
+    "Hyattsville, MD",
+    "Nottingham, MD",
+    "Baltimore, MD",
   ],
   knowsLanguage: ["English", "Armenian", "Russian"],
   memberOf: {
@@ -57,10 +66,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Gayane Gevorgyan | Maryland Realtor - Lucido Global"
-        description="Gayane Gevorgyan is a licensed Maryland REALTOR® with Lucido Global serving Ellicott City, Columbia, Laurel, Severn, and Central Maryland. Fluent in English, Armenian & Russian. Call (443) 922-8458 for a free consultation."
+        title="Gayane Gevorgyan | Maryland Realtor Serving Howard County & Central Maryland"
+        description="Gayane Gevorgyan is a licensed Maryland Realtor with Lucido Global, serving Howard County and surrounding areas — Columbia, Ellicott City, Laurel, Bowie, Catonsville, and more. Fluent in English, Armenian & Russian. Call (443) 922-8458."
         canonicalUrl="/"
-        keywords="Maryland realtor, Ellicott City real estate agent, Columbia MD realtor, Central Maryland homes for sale, buy sell home Maryland, multilingual realtor Maryland, Lucido Global agent, Armenian realtor Maryland"
+        keywords="Maryland Realtor, Gayane Gevorgyan, Howard County real estate agent, Howard County MD Realtor, Columbia MD Realtor, Central Maryland homes for sale, buy sell home Maryland, multilingual Realtor Maryland, Lucido Global agent, Armenian Realtor Maryland, Gayane Gevorgyan Realtor, Bowie MD realtor, Catonsville realtor"
       />
       <script
         type="application/ld+json"

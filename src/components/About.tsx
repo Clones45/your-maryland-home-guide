@@ -1,4 +1,5 @@
-import aboutImg from "@/assets/about-portrait.png";
+import aboutImg from "@/assets/about2.png";
+import aboutImg2 from "@/assets/about3.png";
 import { Globe, Heart, Award, BookOpen } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Link } from "react-router-dom";
@@ -15,21 +16,32 @@ const About = () => {
     <section id="about" className="py-24 md:py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <Reveal width="100%">
-          <div className="relative group">
-            <img
-              src={aboutImg}
-              alt="Gayane Gevorgyan, Realtor"
-              className="w-full max-w-md mx-auto object-cover shadow-2xl transition-transform duration-1000 ease-out group-hover:scale-105"
-            />
-            <div className="absolute -bottom-4 -right-4 w-full max-w-md h-full border-2 border-gold -z-10 transition-transform duration-1000 ease-out group-hover:translate-x-3 group-hover:translate-y-3" />
+          <div className="relative group flex flex-col items-center">
 
-            {/* Credentials ribbon below portrait */}
-            <div className="mt-8 max-w-md mx-auto grid grid-cols-2 gap-2">
+            {/* Rectangular crossfading portrait */}
+            <div className="relative w-full max-w-md mx-auto">
+              {/* Gold offset border frame */}
+              <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-gold -z-10 transition-transform duration-1000 ease-out group-hover:translate-x-3 group-hover:translate-y-3" />
+
+              {/* Stacked images — crossfade every 8s */}
+              <div className="relative w-full overflow-hidden shadow-2xl" style={{ aspectRatio: "3/4" }}>
+                <img
+                  src={aboutImg}
+                  alt="Gayane Gevorgyan, Maryland Realtor"
+                  className="absolute inset-0 w-full h-full object-cover object-top animate-photo-a"
+                />
+                <img
+                  src={aboutImg2}
+                  alt="Gayane Gevorgyan, Maryland Realtor"
+                  className="absolute inset-0 w-full h-full object-cover object-top animate-photo-b"
+                />
+              </div>
+            </div>
+
+            {/* Credentials ribbon */}
+            <div className="mt-12 max-w-md w-full mx-auto grid grid-cols-2 gap-2">
               {credentials.map((c) => (
-                <div
-                  key={c}
-                  className="px-3 py-2 bg-cream border border-gold/20 text-center"
-                >
+                <div key={c} className="px-3 py-2 bg-cream border border-gold/20 text-center">
                   <span className="text-[10px] tracking-[0.15em] uppercase font-body font-semibold text-charcoal">
                     {c}
                   </span>

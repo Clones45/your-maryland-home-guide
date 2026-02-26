@@ -11,7 +11,7 @@ interface SEOProps {
 }
 
 const SITE_NAME = "Gayane Gevorgyan | Maryland Realtor";
-const BASE_URL = "https://gayanesellsmaryland.com";
+const BASE_URL = "https://gayanegevorgyanrealtor.com";
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.jpg`;
 
 const SEO = ({

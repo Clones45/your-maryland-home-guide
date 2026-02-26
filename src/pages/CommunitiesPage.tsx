@@ -7,10 +7,10 @@ const CommunitiesPage = () => {
     return (
         <div className="min-h-screen">
             <SEO
-                title="Maryland Communities | Ellicott City, Columbia & More"
-                description="Discover the best communities in Central Maryland with Gayane Gevorgyan. Explore Ellicott City, Columbia, Laurel, Severn, Hanover, and Linthicum Heights — neighborhoods, schools, and lifestyle guide."
+                title="Communities | Howard County & Central Maryland Real Estate"
+                description="Discover communities across Howard County and Central Maryland with Gayane Gevorgyan. Explore Columbia, Ellicott City, Clarksville, Bowie, Catonsville, Towson, Laurel, Severn, Hanover, and more — neighborhoods, schools, and lifestyle guides."
                 canonicalUrl="/communities"
-                keywords="Ellicott City neighborhoods, Columbia MD real estate, Laurel MD homes, Severn MD houses for sale, Hanover MD real estate, Central Maryland communities, Howard County neighborhoods, Anne Arundel County homes"
+                keywords="Howard County neighborhoods, Columbia MD real estate, Ellicott City homes for sale, Bowie MD realtor, Catonsville MD homes, Clarksville MD real estate, Towson real estate, Laurel MD homes, Severn MD houses, Central Maryland communities, Gaithersburg realtor, Rockville MD homes, Silver Spring MD real estate"
             />
             <Navbar />
             <div className="pt-24">

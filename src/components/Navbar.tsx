@@ -20,15 +20,24 @@ const resourceLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const resourcesRef = useRef<HTMLLIElement>(null);
+  const lastScrollY = useRef(0);
   const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentY = window.scrollY;
+      setIsScrolled(currentY > 50);
+      if (currentY > 80) {
+        setIsHidden(currentY > lastScrollY.current);
+      } else {
+        setIsHidden(false);
+      }
+      lastScrollY.current = currentY;
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -61,12 +70,14 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${isSolid ? "bg-white/95 backdrop-blur-md shadow-sm py-2" : "bg-transparent py-6"
-          }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out
+          ${isSolid ? "bg-white/95 backdrop-blur-md shadow-sm py-2" : "bg-transparent py-6"}
+          ${isHidden && !isOpen ? "opacity-0 -translate-y-full pointer-events-none" : "opacity-100 translate-y-0"}
+        `}
       >
         <div className="container mx-auto flex items-center justify-between px-6">
           <Link to="/" className="group flex items-center gap-4">
-            <img src={bkgImage} alt="Gayane Gevorgyan Logo" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+            <img src={bkgImage} alt="Gayane Gevorgyan Logo" className="w-32 h-32 md:w-44 md:h-44 object-contain" />
             <div className="flex flex-col">
               <div
                 className={`font-heading text-2xl md:text-3xl tracking-wide transition-colors duration-300 ${isSolid ? "text-charcoal" : "text-white"

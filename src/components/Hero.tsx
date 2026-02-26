@@ -60,8 +60,9 @@ const Hero = () => {
 
         <img
           src={bkgImage}
-          alt="Logo"
+          alt="Gayane Gevorgyan Realtor Logo"
           className="w-72 md:w-[28rem] lg:w-[36rem] mb-8 object-contain animate-fade-in-up"
+          style={{ filter: "sepia(1) saturate(4) hue-rotate(5deg) brightness(1.2)" }}
         />
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading text-white tracking-tight animate-fade-in-up leading-tight">
           YOUR HOME.
