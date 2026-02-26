@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://gayanesellsmaryland.com/sitemap.xml
+Sitemap: https://gayanegevorgyanrealtor.com/sitemap.xml
 
 # Crawl delay for courtesy
 Crawl-delay: 2
