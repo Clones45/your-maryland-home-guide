@@ -176,21 +176,21 @@
     }
   }
 
-  /* Photo A: visible 0–40%, fades out 40–50%, hidden 50–90%, fades in 90–100% */
+  /* Photo A: visible 0-25%, fades out 25-33%, hidden 33-92%, fades in 92-100% */
   @keyframes photo-a {
     0% {
       opacity: 1;
     }
 
-    40% {
+    25% {
       opacity: 1;
     }
 
-    50% {
+    33% {
       opacity: 0;
     }
 
-    90% {
+    92% {
       opacity: 0;
     }
 
@@ -199,21 +199,48 @@
     }
   }
 
-  /* Photo B: hidden 0–40%, fades in 40–50%, visible 50–90%, fades out 90–100% */
+  /* Photo B: hidden 0-25%, fades in 25-33%, visible 33-58%, fades out 58-66%, hidden 66-100% */
   @keyframes photo-b {
     0% {
       opacity: 0;
     }
 
-    40% {
+    25% {
       opacity: 0;
     }
 
-    50% {
+    33% {
       opacity: 1;
     }
 
-    90% {
+    58% {
+      opacity: 1;
+    }
+
+    66% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Photo C: hidden 0-58%, fades in 58-66%, visible 66-92%, fades out 92-100% */
+  @keyframes photo-c {
+    0% {
+      opacity: 0;
+    }
+
+    58% {
+      opacity: 0;
+    }
+
+    66% {
+      opacity: 1;
+    }
+
+    92% {
       opacity: 1;
     }
 
@@ -231,10 +258,14 @@
   }
 
   .animate-photo-a {
-    animation: photo-a 8s ease-in-out infinite;
+    animation: photo-a 12s ease-in-out infinite;
   }
 
   .animate-photo-b {
-    animation: photo-b 8s ease-in-out infinite;
+    animation: photo-b 12s ease-in-out infinite;
+  }
+
+  .animate-photo-c {
+    animation: photo-c 12s ease-in-out infinite;
   }
 }

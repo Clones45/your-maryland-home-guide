@@ -1,5 +1,6 @@
-import aboutImg from "@/assets/about2.png";
-import aboutImg2 from "@/assets/about3.png";
+import aboutImg from "@/assets/about1.png";
+import aboutImg2 from "@/assets/about2.png";
+import aboutImg3 from "@/assets/about3.png";
 import { Globe, Heart, Award, BookOpen } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Link } from "react-router-dom";
@@ -23,7 +24,7 @@ const About = () => {
               {/* Gold offset border frame */}
               <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-gold -z-10 transition-transform duration-1000 ease-out group-hover:translate-x-3 group-hover:translate-y-3" />
 
-              {/* Stacked images — crossfade every 8s */}
+              {/* Stacked images — crossfade now loops 3 images */}
               <div className="relative w-full overflow-hidden shadow-2xl" style={{ aspectRatio: "3/4" }}>
                 <img
                   src={aboutImg}
@@ -34,6 +35,11 @@ const About = () => {
                   src={aboutImg2}
                   alt="Gayane Gevorgyan, Maryland Realtor"
                   className="absolute inset-0 w-full h-full object-cover object-top animate-photo-b"
+                />
+                <img
+                  src={aboutImg3}
+                  alt="Gayane Gevorgyan, Maryland Realtor"
+                  className="absolute inset-0 w-full h-full object-cover object-top animate-photo-c"
                 />
               </div>
             </div>
@@ -123,8 +129,8 @@ const About = () => {
             </Link>
           </Reveal>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };
 

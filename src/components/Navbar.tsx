@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Instagram, ChevronDown } from "lucide-react";
-import bkgImage from "@/assets/Bkg.png";
+
 
 const primaryLinks = [
   { label: "Home", to: "/" },
@@ -77,7 +77,6 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex items-center justify-between px-6">
           <Link to="/" className="group flex items-center gap-4">
-            <img src={bkgImage} alt="Gayane Gevorgyan Logo" className="w-32 h-32 md:w-44 md:h-44 object-contain" />
             <div className="flex flex-col">
               <div
                 className={`font-heading text-2xl md:text-3xl tracking-wide transition-colors duration-300 ${isSolid ? "text-charcoal" : "text-white"

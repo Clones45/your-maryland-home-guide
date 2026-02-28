@@ -2,6 +2,7 @@ import { Instagram, Linkedin, Facebook, Phone, Mail, Star, MapPin } from "lucide
 import { Link } from "react-router-dom";
 import { Reveal } from "./Reveal";
 import { useSeoStats } from "@/hooks/useSeoStats";
+import kwLogo from "@/assets/KwLogo.png";
 
 const socialLinks = [
   { icon: Instagram, href: "#", label: "Instagram" },
@@ -58,7 +59,7 @@ const Footer = () => {
                 </div>
               )}
               <p className="text-xs font-body text-warm-white/90 leading-relaxed mb-6">
-                Licensed Maryland REALTOR® with Keller Williams Lucido Agency (Bob Lucido Team), serving Central Maryland — Ellicott City, Columbia, Laurel, Severn, and beyond — with heart-led, results-driven service.
+                Licensed Maryland REALTOR® with Keller Williams Lucido Agency (Bob Lucido Team), serving Central Maryland, Ellicott City, Columbia, Laurel, Severn, and beyond with heart-led, results-driven service.
               </p>
               {/* Social icons */}
               <div className="flex items-center gap-3">
@@ -214,6 +215,13 @@ const Footer = () => {
                   className="h-16 w-auto object-contain"
                 />
               </a>
+              {/* KW Logo */}
+              <img
+                src={kwLogo}
+                alt="Keller Williams"
+                className="h-14 w-auto object-contain"
+                style={{ filter: "brightness(0)" }}
+              />
             </div>
 
             <div className="flex items-center gap-4 text-white">

@@ -33,7 +33,7 @@ const Hero = () => {
           Represented by
         </p>
         <p className="text-xs tracking-[0.2em] uppercase text-gold font-body font-semibold">
-          Lucido Global
+          Keller Williams Lucido Agency
         </p>
         <div className="w-8 h-[1px] bg-gold/60 ml-auto" />
       </div>
@@ -62,7 +62,7 @@ const Hero = () => {
           src={bkgImage}
           alt="Gayane Gevorgyan Realtor Logo"
           className="w-72 md:w-[28rem] lg:w-[36rem] mb-8 object-contain animate-fade-in-up"
-          style={{ filter: "sepia(1) saturate(4) hue-rotate(5deg) brightness(1.2)" }}
+          style={{ filter: "brightness(0) saturate(100%) invert(73%) sepia(45%) saturate(284%) hue-rotate(355deg) brightness(90%) contrast(89%)" }}
         />
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading text-white tracking-tight animate-fade-in-up leading-tight">
           YOUR HOME.

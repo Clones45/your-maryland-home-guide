@@ -5,7 +5,7 @@ const differentiators = [
     {
         icon: Globe,
         title: "Trilingual Advantage",
-        desc: "English, Russian & Armenian — Gayane bridges communication gaps most agents can't, serving diverse Maryland families with zero friction.",
+        desc: "English, Russian & Armenian, Gayane bridges communication gaps most agents can't, serving diverse Maryland families with zero friction.",
         delay: 0.1,
     },
     {
@@ -28,7 +28,7 @@ const differentiators = [
     },
     {
         icon: Shield,
-        title: "Lucido Global Network",
+        title: "Keller Williams Lucido Agency",
         desc: "Backed by one of Maryland's top-producing teams, Gayane carries the power of a globally connected brokerage behind every deal.",
         delay: 0.5,
     },
