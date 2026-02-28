@@ -90,7 +90,7 @@ const Navbar = () => {
                 className={`block text-[10px] tracking-[0.3em] uppercase font-body font-medium mt-1 ${isSolid ? "text-charcoal-light" : "text-gray-200"
                   }`}
               >
-                Realtor · Keller Williams Lucido Agency
+                REALTOR<sup>®</sup> · Keller Williams Lucido Agency
               </span>
             </div>
           </Link>

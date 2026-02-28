@@ -38,7 +38,7 @@ const Footer = () => {
                 <span className="font-semibold">Gevorgyan</span>
               </p>
               <p className="text-[10px] tracking-[0.35em] uppercase font-body text-gold mb-4">
-                Realtor · Keller Williams Lucido Agency
+                REALTOR<sup>®</sup> · Keller Williams Lucido Agency
               </p>
               {/* Live Rank badge — only shown when data is available */}
               {stats?.localPackRank != null && (
