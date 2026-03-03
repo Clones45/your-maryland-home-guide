@@ -6,7 +6,7 @@ import kwLogo from "@/assets/KwLogo.png";
 
 const socialLinks = [
   { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/gayane-gevorgyan-aa69b4282/", label: "LinkedIn" },
   { icon: Facebook, href: "https://www.facebook.com/gayane.gevorgyan.724473", label: "Facebook" },
 ];
 
