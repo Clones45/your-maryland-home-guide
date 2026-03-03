@@ -62,7 +62,7 @@ const Hero = () => {
           src={bkgImage}
           alt="Gayane Gevorgyan Realtor Logo"
           className="w-48 md:w-[32rem] lg:w-[42rem] object-contain animate-fade-in-up"
-          style={{ filter: "brightness(0) saturate(100%) invert(11%) sepia(11%) saturate(5508%) hue-rotate(187deg) brightness(86%) contrast(97%)" }}
+          style={{ filter: "brightness(0) saturate(100%) invert(21%) sepia(0%) saturate(2619%) hue-rotate(232deg) brightness(98%) contrast(83%)" }}
         />
       </div>
 
