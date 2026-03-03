@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ChevronLeft } from 'lucide-react';
+import gayanePhoto from '../assets/about1.png';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { sanityClient, urlFor } from '../lib/sanityClient';
@@ -183,7 +184,7 @@ const PropertyDetailsPage = () => {
                                     <div className="mt-8 pt-8 border-t border-neutral-100">
                                         <div className="flex items-center gap-4">
                                             <div className="w-16 h-16 rounded-full bg-neutral-200 overflow-hidden shrink-0 border border-neutral-300">
-                                                <img src="/GayaneG.jpg" alt="Gayane Gevorgyan" className="w-full h-full object-cover" />
+                                                <img src={gayanePhoto} alt="Gayane Gevorgyan" className="w-full h-full object-cover object-top" />
                                             </div>
                                             <div>
                                                 <div className="font-heading text-xl text-charcoal">Gayane Gevorgyan</div>
