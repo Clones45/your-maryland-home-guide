@@ -7,6 +7,7 @@ const primaryLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/About" },
   { label: "Services", to: "/Services" },
+  { label: "Properties", to: "/Properties" },
   { label: "Communities", to: "/Communities" },
   { label: "Contact", to: "/Contact" },
 ];

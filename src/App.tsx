@@ -12,6 +12,8 @@ import ContactPage from "./pages/ContactPage";
 import BuyersPage from "./pages/BuyersPage";
 import SellersPage from "./pages/SellersPage";
 import MarketReportsPage from "./pages/MarketReportsPage";
+import PropertiesPage from "./pages/PropertiesPage";
+import PropertyDetailsPage from "./pages/PropertyDetailsPage";
 import NotFound from "./pages/NotFound";
 import BackToTop from "./components/BackToTop";
 import PageTransition from "./components/PageTransition";
@@ -31,6 +33,8 @@ const AnimatedRoutes = () => {
         <Route path="/buyers" element={<BuyersPage />} />
         <Route path="/sellers" element={<SellersPage />} />
         <Route path="/market-reports" element={<MarketReportsPage />} />
+        <Route path="/properties" element={<PropertiesPage />} />
+        <Route path="/properties/:slug" element={<PropertyDetailsPage />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
