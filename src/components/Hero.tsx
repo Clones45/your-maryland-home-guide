@@ -53,17 +53,23 @@ const Hero = () => {
         ))}
       </div>
 
+      {/* Absolute Logo perfectly fitted in the Sky gap over the roof */}
+      <div
+        className="absolute top-[70px] md:top-[35px] left-0 right-14 z-40 flex justify-center pointer-events-none px-6"
+        style={{ transform: `translateY(${scrollY * 0.1}px)` }}
+      >
+        <img
+          src={bkgImage}
+          alt="Gayane Gevorgyan Realtor Logo"
+          className="w-48 md:w-[32rem] lg:w-[42rem] object-contain animate-fade-in-up"
+          style={{ filter: "brightness(0) saturate(100%) invert(11%) sepia(11%) saturate(5508%) hue-rotate(187deg) brightness(86%) contrast(97%)" }}
+        />
+      </div>
+
       <div
         className="relative z-30 flex flex-col items-center justify-center h-full text-center px-6"
         style={{ transform: `translateY(${scrollY * 0.2}px)` }}
       >
-
-        <img
-          src={bkgImage}
-          alt="Gayane Gevorgyan Realtor Logo"
-          className="w-72 md:w-[28rem] lg:w-[36rem] mb-8 object-contain animate-fade-in-up"
-          style={{ filter: "brightness(0) saturate(100%) invert(73%) sepia(45%) saturate(284%) hue-rotate(355deg) brightness(90%) contrast(89%)" }}
-        />
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading text-white tracking-tight animate-fade-in-up leading-tight">
           YOUR HOME.
           <br />
