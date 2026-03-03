@@ -1,132 +1,132 @@
 {
-    "lastUpdated": "2026-02-25",
-    "dataSource": "Zillow Research / Maryland REALTORS® / MRIS MLS",
-    "note": "Data auto-updated weekly",
-    "counties": {
-        "howardCounty": {
-            "name": "Howard County",
-            "medianPrice": 620000,
-            "priceChangePct": 4.2,
-            "avgDaysOnMarket": 18,
-            "listToSaleRatio": 101.3,
-            "activeListings": 284,
-            "trend": "up",
-            "description": "One of the wealthiest and most educated counties in the U.S., Howard County consistently outperforms state and national real estate averages."
-        },
-        "anneArundelCounty": {
-            "name": "Anne Arundel County",
-            "medianPrice": 484000,
-            "priceChangePct": 3.8,
-            "avgDaysOnMarket": 22,
-            "listToSaleRatio": 99.8,
-            "activeListings": 412,
-            "trend": "up",
-            "description": "Benefiting from BWI Airport proximity, naval/defense employment, and a growing tech corridor, Anne Arundel is a high-demand market for all buyer types."
-        },
-        "baltimoreMSA": {
-            "name": "Baltimore MSA",
-            "medianPrice": 358000,
-            "priceChangePct": 2.9,
-            "avgDaysOnMarket": 28,
-            "listToSaleRatio": 98.5,
-            "activeListings": 1840,
-            "trend": "up",
-            "description": "The broader Baltimore metro area offers diverse price points and strong rental demand, making it a smart choice for investors and relocation buyers."
-        }
+  "lastUpdated": "2026-03-01",
+  "dataSource": "Zillow Research / Maryland REALTORS\u00ae / MRIS MLS",
+  "note": "Data auto-updated weekly",
+  "counties": {
+    "howardCounty": {
+      "name": "Howard County",
+      "medianPrice": 620000,
+      "priceChangePct": 4.2,
+      "avgDaysOnMarket": 18,
+      "listToSaleRatio": 101.3,
+      "activeListings": 284,
+      "trend": "up",
+      "description": "One of the wealthiest and most educated counties in the U.S., Howard County consistently outperforms state and national real estate averages."
     },
-    "neighborhoods": [
-        {
-            "name": "Ellicott City",
-            "county": "Howard County",
-            "medianPrice": 680000,
-            "yoyChangePct": 5.1,
-            "schoolRating": 9.2,
-            "marketTemp": "Hot",
-            "description": "One of the most sought-after zip codes in Maryland. Strong demand from federal government employees and tech sector workers drives consistent appreciation. Inventory remains historically low.",
-            "highlight": "Low inventory + high demand = strong seller negotiating power",
-            "zipCodes": [
-                "21042",
-                "21043"
-            ]
-        },
-        {
-            "name": "Columbia",
-            "county": "Howard County",
-            "medianPrice": 545000,
-            "yoyChangePct": 4.4,
-            "schoolRating": 8.8,
-            "marketTemp": "Hot",
-            "description": "Planned community excellence. Columbia's village system, walkable amenities, and proximity to major employers maintain robust buyer demand across all price points.",
-            "highlight": "Master-planned community with diverse price points — great for all buyers",
-            "zipCodes": [
-                "21044",
-                "21045",
-                "21046"
-            ]
-        },
-        {
-            "name": "Linthicum Heights",
-            "county": "Anne Arundel County",
-            "medianPrice": 420000,
-            "yoyChangePct": 6.2,
-            "schoolRating": 7.5,
-            "marketTemp": "Very Hot",
-            "description": "One of the fastest-appreciating neighborhoods in the Baltimore metro area. Proximity to BWI Airport makes this a high-demand location for commuters and defense sector workers.",
-            "highlight": "Highest appreciation rate in the region — strong investment upside",
-            "zipCodes": [
-                "21090"
-            ]
-        },
-        {
-            "name": "Severn",
-            "county": "Anne Arundel County",
-            "medianPrice": 395000,
-            "yoyChangePct": 3.7,
-            "schoolRating": 7.9,
-            "marketTemp": "Warm",
-            "description": "Growing suburban community bridging the gap between Baltimore and Annapolis. Families are drawn by affordability relative to Howard County and access to Fort Meade and NSA.",
-            "highlight": "Undervalued relative to neighboring areas — opportunity for buyers",
-            "zipCodes": [
-                "21144"
-            ]
-        },
-        {
-            "name": "Hanover",
-            "county": "Anne Arundel County",
-            "medianPrice": 375000,
-            "yoyChangePct": 4.0,
-            "schoolRating": 7.6,
-            "marketTemp": "Warm",
-            "description": "A well-positioned community near Arundel Mills, the MARC commuter rail, and BWI Airport. New construction townhomes and single-family communities continue to attract first-time and move-up buyers.",
-            "highlight": "New construction available — great for buyers seeking modern homes",
-            "zipCodes": [
-                "21076"
-            ]
-        },
-        {
-            "name": "Laurel",
-            "county": "Prince George's / Howard",
-            "medianPrice": 420000,
-            "yoyChangePct": 5.3,
-            "schoolRating": 7.2,
-            "marketTemp": "Hot",
-            "description": "Strategically located between Baltimore and Washington D.C., Laurel offers exceptional commuter access via I-295, the MARC train, and Route 1. The diverse community is drawing increasing buyer attention.",
-            "highlight": "Dual-metro commuter advantage — appreciating rapidly",
-            "zipCodes": [
-                "20707",
-                "20708",
-                "20723",
-                "20724"
-            ]
-        }
-    ],
-    "marketCondition": "Seller's Market",
-    "marketSummary": "Central Maryland is experiencing historically low inventory relative to buyer demand. Well-priced, well-presented homes are receiving multiple offers and often selling above asking price.",
-    "interestRateNote": "30-year fixed mortgage rates remain a key factor for buyers. Despite rates above pandemic lows, home values continue to appreciate — making delayed purchases increasingly costly.",
-    "statewideMetrics": {
-        "medianPrice": 415000,
-        "priceChangePct": 3.5,
-        "inventoryMonths": 1.8,
-        "closedSalesYoYChange": -2.1
+    "anneArundelCounty": {
+      "name": "Anne Arundel County",
+      "medianPrice": 484000,
+      "priceChangePct": 3.8,
+      "avgDaysOnMarket": 22,
+      "listToSaleRatio": 99.8,
+      "activeListings": 412,
+      "trend": "up",
+      "description": "Benefiting from BWI Airport proximity, naval/defense employment, and a growing tech corridor, Anne Arundel is a high-demand market for all buyer types."
+    },
+    "baltimoreMSA": {
+      "name": "Baltimore MSA",
+      "medianPrice": 358000,
+      "priceChangePct": 2.9,
+      "avgDaysOnMarket": 28,
+      "listToSaleRatio": 98.5,
+      "activeListings": 1840,
+      "trend": "up",
+      "description": "The broader Baltimore metro area offers diverse price points and strong rental demand, making it a smart choice for investors and relocation buyers."
     }
+  },
+  "neighborhoods": [
+    {
+      "name": "Ellicott City",
+      "county": "Howard County",
+      "medianPrice": 680000,
+      "yoyChangePct": 5.1,
+      "schoolRating": 9.2,
+      "marketTemp": "Hot",
+      "description": "One of the most sought-after zip codes in Maryland. Strong demand from federal government employees and tech sector workers drives consistent appreciation. Inventory remains historically low.",
+      "highlight": "Low inventory + high demand = strong seller negotiating power",
+      "zipCodes": [
+        "21042",
+        "21043"
+      ]
+    },
+    {
+      "name": "Columbia",
+      "county": "Howard County",
+      "medianPrice": 545000,
+      "yoyChangePct": 4.4,
+      "schoolRating": 8.8,
+      "marketTemp": "Hot",
+      "description": "Planned community excellence. Columbia's village system, walkable amenities, and proximity to major employers maintain robust buyer demand across all price points.",
+      "highlight": "Master-planned community with diverse price points \u2014 great for all buyers",
+      "zipCodes": [
+        "21044",
+        "21045",
+        "21046"
+      ]
+    },
+    {
+      "name": "Linthicum Heights",
+      "county": "Anne Arundel County",
+      "medianPrice": 420000,
+      "yoyChangePct": 6.2,
+      "schoolRating": 7.5,
+      "marketTemp": "Very Hot",
+      "description": "One of the fastest-appreciating neighborhoods in the Baltimore metro area. Proximity to BWI Airport makes this a high-demand location for commuters and defense sector workers.",
+      "highlight": "Highest appreciation rate in the region \u2014 strong investment upside",
+      "zipCodes": [
+        "21090"
+      ]
+    },
+    {
+      "name": "Severn",
+      "county": "Anne Arundel County",
+      "medianPrice": 395000,
+      "yoyChangePct": 3.7,
+      "schoolRating": 7.9,
+      "marketTemp": "Warm",
+      "description": "Growing suburban community bridging the gap between Baltimore and Annapolis. Families are drawn by affordability relative to Howard County and access to Fort Meade and NSA.",
+      "highlight": "Undervalued relative to neighboring areas \u2014 opportunity for buyers",
+      "zipCodes": [
+        "21144"
+      ]
+    },
+    {
+      "name": "Hanover",
+      "county": "Anne Arundel County",
+      "medianPrice": 375000,
+      "yoyChangePct": 4.0,
+      "schoolRating": 7.6,
+      "marketTemp": "Warm",
+      "description": "A well-positioned community near Arundel Mills, the MARC commuter rail, and BWI Airport. New construction townhomes and single-family communities continue to attract first-time and move-up buyers.",
+      "highlight": "New construction available \u2014 great for buyers seeking modern homes",
+      "zipCodes": [
+        "21076"
+      ]
+    },
+    {
+      "name": "Laurel",
+      "county": "Prince George's / Howard",
+      "medianPrice": 420000,
+      "yoyChangePct": 5.3,
+      "schoolRating": 7.2,
+      "marketTemp": "Hot",
+      "description": "Strategically located between Baltimore and Washington D.C., Laurel offers exceptional commuter access via I-295, the MARC train, and Route 1. The diverse community is drawing increasing buyer attention.",
+      "highlight": "Dual-metro commuter advantage \u2014 appreciating rapidly",
+      "zipCodes": [
+        "20707",
+        "20708",
+        "20723",
+        "20724"
+      ]
+    }
+  ],
+  "marketCondition": "Seller's Market",
+  "marketSummary": "Central Maryland is experiencing historically low inventory relative to buyer demand. Well-priced, well-presented homes are receiving multiple offers and often selling above asking price.",
+  "interestRateNote": "30-year fixed mortgage rates remain a key factor for buyers. Despite rates above pandemic lows, home values continue to appreciate \u2014 making delayed purchases increasingly costly.",
+  "statewideMetrics": {
+    "medianPrice": 415000,
+    "priceChangePct": 3.5,
+    "inventoryMonths": 1.8,
+    "closedSalesYoYChange": -2.1
+  }
 }
