@@ -55,13 +55,13 @@ const Hero = () => {
 
       {/* Absolute Logo perfectly fitted in the Sky gap over the roof */}
       <div
-        className="absolute top-[70px] md:top-[35px] left-0 right-14 z-40 flex justify-center pointer-events-none px-6"
+        className="absolute top-0 left-0 right-0 z-40 flex justify-center items-start pointer-events-none px-6 pt-4"
         style={{ transform: `translateY(${scrollY * 0.1}px)` }}
       >
         <img
           src={bkgImage}
           alt="Gayane Gevorgyan Realtor Logo"
-          className="w-48 md:w-[32rem] lg:w-[42rem] object-contain animate-fade-in-up"
+          className="w-60 md:w-[34rem] lg:w-[48rem] max-h-[36vh] object-contain object-top animate-fade-in-up"
           style={{ filter: "brightness(0) saturate(100%) invert(21%) sepia(0%) saturate(2619%) hue-rotate(232deg) brightness(98%) contrast(83%)" }}
         />
       </div>

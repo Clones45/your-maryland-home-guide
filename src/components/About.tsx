@@ -1,6 +1,5 @@
 import aboutImg from "@/assets/about1.png";
 import aboutImg2 from "@/assets/about2.png";
-import aboutImg3 from "@/assets/about3.png";
 import { Globe, Heart, Award, BookOpen } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { Link } from "react-router-dom";
@@ -35,11 +34,6 @@ const About = () => {
                   src={aboutImg2}
                   alt="Gayane Gevorgyan, Maryland Realtor"
                   className="absolute inset-0 w-full h-full object-cover object-top animate-photo-b"
-                />
-                <img
-                  src={aboutImg3}
-                  alt="Gayane Gevorgyan, Maryland Realtor"
-                  className="absolute inset-0 w-full h-full object-cover object-top animate-photo-c"
                 />
               </div>
             </div>

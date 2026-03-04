@@ -219,7 +219,7 @@ const Footer = () => {
               <img
                 src={kwLogo}
                 alt="Keller Williams"
-                className="h-14 w-auto object-contain"
+                className="h-28 w-auto object-contain"
                 style={{ filter: "brightness(0)" }}
               />
             </div>
