@@ -81,7 +81,7 @@ const About = () => {
           <Reveal delay={0.55}>
             <p className="text-muted-foreground font-body leading-relaxed mb-6">
               Fluent in English, Russian, and Armenian, and backed by the global reach of
-              Keller Williams Lucido Agency, I serve Maryland's diverse communities with cultural sensitivity
+              Bob Lucido Team of Keller Williams Lucido Agency, I serve Maryland's diverse communities with cultural sensitivity
               and world-class resources. Whether you're a local family or relocating
               internationally, I speak your language, literally and figuratively.
             </p>

@@ -50,7 +50,7 @@ const Stats = () => {
   return (
     <section className="py-16 bg-charcoal">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-4">
+        <div className="grid grid-cols-3 gap-4 md:gap-8">
           {stats.map(({ value, suffix, label }, i) => (
             <Reveal key={label} delay={i * 0.1}>
               <div className="text-center group">

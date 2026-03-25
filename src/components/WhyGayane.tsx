@@ -28,7 +28,7 @@ const differentiators = [
     },
     {
         icon: Shield,
-        title: "Keller Williams Lucido Agency",
+        title: "Bob Lucido Team of Keller Williams Lucido Agency",
         desc: "Backed by one of Maryland's top-producing teams, Gayane carries the power of a globally connected brokerage behind every deal.",
         delay: 0.5,
     },

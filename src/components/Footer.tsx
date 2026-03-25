@@ -38,7 +38,7 @@ const Footer = () => {
                 <span className="font-semibold">Gevorgyan</span>
               </p>
               <p className="text-[10px] tracking-[0.35em] uppercase font-body text-gold mb-4">
-                REALTOR<sup>®</sup> · Keller Williams Lucido Agency
+                REALTOR<sup>®</sup> · Bob Lucido Team of Keller Williams Lucido Agency
               </p>
               {/* Live Rank badge — only shown when data is available */}
               {stats?.localPackRank != null && (
@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
               )}
               <p className="text-xs font-body text-warm-white/90 leading-relaxed mb-6">
-                Licensed Maryland REALTOR® with Keller Williams Lucido Agency (Bob Lucido Team), serving Central Maryland, Ellicott City, Columbia, Laurel, Severn, and beyond with heart-led, results-driven service.
+                Licensed Maryland REALTOR® with Bob Lucido Team of Keller Williams Lucido Agency, serving Central Maryland, Ellicott City, Columbia, Laurel, Severn, and beyond with heart-led, results-driven service.
               </p>
               {/* Social icons */}
               <div className="flex items-center gap-3">
@@ -193,7 +193,7 @@ const Footer = () => {
             <p>© {new Date().getFullYear()} Gayane Gevorgyan. All rights reserved.</p>
 
             {/* Compliance & Team Logos */}
-            <div className="flex items-center gap-5">
+            <div className="flex flex-wrap items-center justify-center gap-5">
               {/* EHO + REALTOR badge */}
               <img
                 src={`${import.meta.env.BASE_URL}eho-realtor.png`}
@@ -205,12 +205,12 @@ const Footer = () => {
                 href="https://lucidoglobal.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Bob Lucido Team – Keller Williams Lucido Agency"
+                aria-label="Bob Lucido Team of Keller Williams Lucido Agency"
                 className="hover:opacity-80 transition-opacity duration-300"
               >
                 <img
                   src={`${import.meta.env.BASE_URL}team-logo.webp`}
-                  alt="Bob Lucido Team · Keller Williams Lucido Agency"
+                  alt="Bob Lucido Team of Keller Williams Lucido Agency"
                   style={{ filter: "invert(1)" }}
                   className="h-16 w-auto object-contain"
                 />

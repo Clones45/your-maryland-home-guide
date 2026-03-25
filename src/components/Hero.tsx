@@ -33,7 +33,8 @@ const Hero = () => {
           Represented by
         </p>
         <p className="text-xs tracking-[0.2em] uppercase text-gold font-body font-semibold">
-          Keller Williams Lucido Agency
+          <span className="hidden lg:inline">Bob Lucido Team of Keller Williams Lucido Agency</span>
+          <span className="lg:hidden">Bob Lucido Team · KW Lucido Agency</span>
         </p>
         <div className="w-8 h-[1px] bg-gold/60 ml-auto" />
       </div>

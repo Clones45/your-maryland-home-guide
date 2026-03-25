@@ -88,16 +88,17 @@ const Navbar = () => {
               </div>
               <div className="h-[1px] w-12 bg-gold mt-1 transition-all duration-500 group-hover:w-full"></div>
               <span
-                className={`block text-[10px] tracking-[0.3em] uppercase font-body font-medium mt-1 ${isSolid ? "text-charcoal-light" : "text-gray-200"
+                className={`hidden sm:block text-[10px] tracking-[0.3em] uppercase font-body font-medium mt-1 ${isSolid ? "text-charcoal-light" : "text-gray-200"
                   }`}
               >
-                REALTOR<sup>®</sup> · Keller Williams Lucido Agency
+                <span className="hidden lg:inline">REALTOR<sup>®</sup> · Bob Lucido Team of Keller Williams Lucido Agency</span>
+                <span className="lg:hidden">REALTOR<sup>®</sup> · KW Lucido Agency</span>
               </span>
             </div>
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-8">
             {primaryLinks.map((link) => (
               <li key={link.label}>
                 <Link
@@ -143,7 +144,7 @@ const Navbar = () => {
             <li>
               <a
                 href="tel:+14439228458"
-                className={`flex items-center gap-2 text-xs tracking-wider transition-colors ${isSolid ? "text-charcoal hover:text-gold" : "text-white hover:text-gold"}`}
+                className={`flex items-center gap-2 text-xs tracking-wider transition-colors whitespace-nowrap ${isSolid ? "text-charcoal hover:text-gold" : "text-white hover:text-gold"}`}
               >
                 <Phone size={14} className="text-gold" />
                 <span>(443) 922-8458</span>
@@ -163,7 +164,7 @@ const Navbar = () => {
           {/* Mobile toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden transition-colors ${isSolid ? "text-charcoal" : "text-white"}`}
+            className={`lg:hidden transition-colors ${isSolid ? "text-charcoal" : "text-white"}`}
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
