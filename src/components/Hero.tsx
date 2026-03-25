@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="absolute inset-8 border border-white/20 z-20 pointer-events-none hidden md:block" />
 
       {/* Lucido Global badge — bottom right */}
-      <div className="absolute bottom-10 right-10 z-30 hidden md:flex flex-col items-end gap-1 pointer-events-none">
+      <div className="absolute bottom-10 right-10 z-30 hidden md:flex flex-col items-center gap-1 pointer-events-none">
         <p className="text-[9px] tracking-[0.3em] uppercase text-white/50 font-body">
           Represented by
         </p>

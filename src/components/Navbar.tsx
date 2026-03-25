@@ -78,7 +78,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto flex items-center justify-between px-6">
           <Link to="/" className="group flex items-center gap-4">
-            <div className="flex flex-col">
+            <div className="flex flex-col items-start">
               <div
                 className={`font-heading text-xl lg:text-2xl xl:text-3xl tracking-wide transition-colors duration-300 ${isSolid ? "text-charcoal" : "text-white"
                   }`}
@@ -88,12 +88,15 @@ const Navbar = () => {
               </div>
               <div className="h-[1px] w-12 bg-gold mt-1 transition-all duration-500 group-hover:w-full"></div>
               <span
-                className={`hidden xl:block text-[10px] tracking-[0.3em] uppercase font-body font-medium mt-1 ${isSolid ? "text-charcoal-light" : "text-gray-200"
-                  }`}
+                className={`hidden xl:block text-[10px] tracking-[0.3em] uppercase font-body font-medium mt-1 ${isSolid ? "text-charcoal-light" : "text-gray-200"}`}
               >
-                <span className="hidden 2xl:inline">REALTOR<sup>®</sup> · Bob Lucido Team of Keller Williams Lucido Agency</span>
-                <span className="2xl:hidden">REALTOR<sup>®</sup> · KW Lucido Agency</span>
+                REALTOR<sup>®</sup>
               </span>
+              <img
+                src="/team-logo.webp"
+                alt="Bob Lucido Team Logo"
+                className="hidden xl:block h-20 w-auto object-contain mt-1"
+              />
             </div>
           </Link>
 

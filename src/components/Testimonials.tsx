@@ -140,7 +140,7 @@ const Testimonials = () => {
                 <Reveal delay={0.6} width="100%">
                     <div className="mt-12 text-center flex flex-col items-center gap-6">
                         <p className="text-sm font-body text-muted-foreground">
-                            Join 100+ Maryland families who trusted Gayane with their biggest move.
+                            Join Maryland families who trusted Gayane with their biggest move.
                         </p>
                         <a
                             href="https://g.page/r/CeTML7oLGD76EAE/review"
