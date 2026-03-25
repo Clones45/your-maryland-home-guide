@@ -80,7 +80,7 @@ const Navbar = () => {
           <Link to="/" className="group flex items-center gap-4">
             <div className="flex flex-col">
               <div
-                className={`font-heading text-2xl md:text-3xl tracking-wide transition-colors duration-300 ${isSolid ? "text-charcoal" : "text-white"
+                className={`font-heading text-xl lg:text-2xl xl:text-3xl tracking-wide transition-colors duration-300 ${isSolid ? "text-charcoal" : "text-white"
                   }`}
               >
                 <span className="font-medium">Gayane</span>{" "}
@@ -88,17 +88,17 @@ const Navbar = () => {
               </div>
               <div className="h-[1px] w-12 bg-gold mt-1 transition-all duration-500 group-hover:w-full"></div>
               <span
-                className={`hidden sm:block text-[10px] tracking-[0.3em] uppercase font-body font-medium mt-1 ${isSolid ? "text-charcoal-light" : "text-gray-200"
+                className={`hidden xl:block text-[10px] tracking-[0.3em] uppercase font-body font-medium mt-1 ${isSolid ? "text-charcoal-light" : "text-gray-200"
                   }`}
               >
-                <span className="hidden lg:inline">REALTOR<sup>®</sup> · Bob Lucido Team of Keller Williams Lucido Agency</span>
-                <span className="lg:hidden">REALTOR<sup>®</sup> · KW Lucido Agency</span>
+                <span className="hidden 2xl:inline">REALTOR<sup>®</sup> · Bob Lucido Team of Keller Williams Lucido Agency</span>
+                <span className="2xl:hidden">REALTOR<sup>®</sup> · KW Lucido Agency</span>
               </span>
             </div>
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden lg:flex items-center gap-8">
+          <ul className="hidden lg:flex items-center gap-3 xl:gap-6">
             {primaryLinks.map((link) => (
               <li key={link.label}>
                 <Link
@@ -140,8 +140,8 @@ const Navbar = () => {
               )}
             </li>
 
-            <li className="h-4 w-[1px] bg-gold/50"></li>
-            <li>
+            <li className="h-4 w-[1px] bg-gold/50 hidden xl:block"></li>
+            <li className="hidden xl:block">
               <a
                 href="tel:+14439228458"
                 className={`flex items-center gap-2 text-xs tracking-wider transition-colors whitespace-nowrap ${isSolid ? "text-charcoal hover:text-gold" : "text-white hover:text-gold"}`}
@@ -150,7 +150,7 @@ const Navbar = () => {
                 <span>(443) 922-8458</span>
               </a>
             </li>
-            <li>
+            <li className="hidden xl:block">
               <a
                 href="#"
                 aria-label="Instagram"

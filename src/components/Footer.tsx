@@ -195,11 +195,19 @@ const Footer = () => {
             {/* Compliance & Team Logos */}
             <div className="flex flex-wrap items-center justify-center gap-5">
               {/* EHO + REALTOR badge */}
-              <img
-                src={`${import.meta.env.BASE_URL}eho-realtor.png`}
-                alt="Equal Housing Opportunity · REALTOR®"
-                className="h-28 w-auto object-contain"
-              />
+              <a
+                href="https://www.nar.realtor/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="National Association of REALTORS"
+                className="hover:opacity-80 transition-opacity duration-300"
+              >
+                <img
+                  src={`${import.meta.env.BASE_URL}eho-realtor.png`}
+                  alt="Equal Housing Opportunity · REALTOR®"
+                  className="h-28 w-auto object-contain"
+                />
+              </a>
               {/* Bob Lucido Team logo — links to lucidoglobal.com */}
               <a
                 href="https://lucidoglobal.com"
@@ -211,17 +219,25 @@ const Footer = () => {
                 <img
                   src={`${import.meta.env.BASE_URL}team-logo.webp`}
                   alt="Bob Lucido Team of Keller Williams Lucido Agency"
-                  style={{ filter: "invert(1)" }}
-                  className="h-16 w-auto object-contain"
+                  style={{ filter: "brightness(0)" }}
+                  className="h-28 w-auto object-contain"
                 />
               </a>
               {/* KW Logo */}
-              <img
-                src={kwLogo}
-                alt="Keller Williams"
-                className="h-28 w-auto object-contain"
-                style={{ filter: "brightness(0)" }}
-              />
+              <a
+                href="https://kw.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Keller Williams"
+                className="hover:opacity-80 transition-opacity duration-300"
+              >
+                <img
+                  src={kwLogo}
+                  alt="Keller Williams"
+                  className="h-40 w-auto object-contain"
+                  style={{ filter: "brightness(0)" }}
+                />
+              </a>
             </div>
 
             <div className="flex items-center gap-4 text-white">
