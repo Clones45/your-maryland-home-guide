@@ -274,7 +274,7 @@ const PropertyDetailsPage = () => {
                             <p className="text-neutral-500 text-lg">{property.address}</p>
                         </div>
                         <div className="shrink-0 text-right">
-                            <div className="text-sm text-neutral-400 uppercase tracking-widest mb-1">Asking Price</div>
+                            <div className="text-sm text-neutral-400 uppercase tracking-widest mb-1">{property.status?.toLowerCase() === 'sold' ? 'Sold Price' : 'Asking Price'}</div>
                             <div className="text-4xl md:text-5xl font-heading text-neutral-900 font-bold">${property.price?.toLocaleString()}</div>
                         </div>
                     </div>
